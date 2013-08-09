@@ -13,7 +13,12 @@
 <body>
 
 <div ng-controller='TodoCtrl'>
-  {{totalTodos}}
+  <h2>Total Todos: {{totalTodos}}</h2>
+  <ul>
+    <li ng-repeat='todo in todos'>
+      {{todo.text}}
+    </li>
+  </ul>
 </div>
 
 </body>
