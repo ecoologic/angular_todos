@@ -16,7 +16,10 @@
   <h2>Total Todos: {{totalTodos}}</h2>
   <ul>
     <li ng-repeat='todo in todos'>
-      {{todo.text}}
+      <label class='done-{{todo.done}}'>
+        {{todo.text}}
+        <input type='checkbox' ng-model='todo.done'>
+      </label>
     </li>
   </ul>
 </div>
