@@ -14,7 +14,11 @@
 
 <div ng-controller='TodoCtrl'>
   <h2>Total Todos: {{getTotalTodos()}}</h2>
-  <input type='text' ng-model='search'>
+  
+  <label>
+    Filter by text:
+    <input type='text' ng-model='search'>
+  </label>
 
   <ul>
     <li ng-repeat='todo in todos | filter:search | orderBy: "text"'>

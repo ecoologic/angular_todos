@@ -1,5 +1,9 @@
 /* app */
 
+html, body {
+  background-color: #8AA894;
+}
+
 .done-true {
   text-decoration: line-through;
   color: gray;

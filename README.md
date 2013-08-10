@@ -8,3 +8,6 @@ there's not much:
 * ng-model
 * add an object through a form
 * calc field binding
+* list ordering
+* list filter
+
