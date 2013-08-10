@@ -14,8 +14,10 @@
 
 <div ng-controller='TodoCtrl'>
   <h2>Total Todos: {{getTotalTodos()}}</h2>
+  <input type='text' ng-model='search'>
+
   <ul>
-    <li ng-repeat='todo in todos'>
+    <li ng-repeat='todo in todos | orderBy: "text"'>
       <label class='done-{{todo.done}}'>
         {{todo.text}}
         <input type='checkbox' ng-model='todo.done'>
