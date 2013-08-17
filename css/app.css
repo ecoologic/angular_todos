@@ -8,3 +8,7 @@ html, body {
   text-decoration: line-through;
   color: gray;
 }
+
+input.ng-invalid {
+  color: red;
+}
