@@ -26,11 +26,12 @@
         <input type='checkbox' ng-model='todo.done'>
       </label>
     </li>
-    <form class='form-orizontal'>
-      <input type='text' ng-model='newTodo.text' ng-model-instant ng-maxlength='15'>
+    <form class='form-orizontal' name='newTodoForm'>
+      <input type='text' ng-model='newTodo.text' ng-model-instant ng-maxlength='15' name='newTodoText' autofocus>
       <button class='btn' ng-click='add(newTodo)' ng-disabled='!newTodo.text'>
         <i class='icon-plus'></i> Add
       </button>
+      <span class='error' ng-show='newTodoForm.newTodoText.$error.maxlength'>Todo is too long</span>
     </form>
     <button class='btn-large' ng-click='clearCompleted()'>
       <i class='icon-trash'></i> Clear Completed
