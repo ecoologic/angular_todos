@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app='app'>
 <head>
   <meta charset="utf-8">
   <title>Erik Ecoologic</title>
@@ -10,9 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
-<body>
+<body ng-controller='ApplicationController'>
 
-<div ng-controller='TodoCtrl'>
   <h2>Total Todos: {{getTotalTodos()}}</h2>
   
   <label>
@@ -37,7 +36,6 @@
       <i class='icon-trash'></i> Clear Completed
     </button>
   </ul>
-</div>
 
 </body>
 </html>

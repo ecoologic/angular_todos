@@ -1,6 +1,7 @@
 // app
+var app = angular.module('app', []);
 
-function TodoCtrl($scope) {
+function ApplicationController($scope) {
   $scope.todos = [
     {text: "watch first angular video", done: false},
     {text: "reproduce the code", done: false}
