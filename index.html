@@ -28,7 +28,7 @@
     </li>
     <form class='form-orizontal'>
       <input type='text' ng-model='formTodoText' ng-model-instant>
-      <button class='btn' ng-click='addTodo()'>
+      <button class='btn' ng-click='addTodo()' ng-disabled='!formTodoText'>
         <i class='icon-plus'></i> Add
       </button>
     </form>
