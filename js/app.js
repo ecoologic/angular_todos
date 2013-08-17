@@ -11,8 +11,8 @@ function ApplicationController($scope) {
     return $scope.todos.length;
   };
 
-  $scope.addTodo = function() {
-    $scope.todos.push({text: $scope.formTodoText, done: false});
+  $scope.add = function(newTodo) {
+    $scope.todos.push({text: newTodo.text, done: false});
     $scope.formTodoText = '';
   };
 
