@@ -1,7 +1,9 @@
-// app
-var app = angular.module('app', []);
+var app = angular.module('app', ['firebase'])
+                 .controller('ApplicationController', function($scope, angularFire) {
 
-function ApplicationController($scope) {
+  var url = 'https://angular-first.firebaseio.com/';
+  angularFire(url, $scope, 'todos', []);
+
   $scope.todos = [
     {text: "watch first angular video", done: false},
     {text: "reproduce the code", done: false}
@@ -21,4 +23,4 @@ function ApplicationController($scope) {
       return !todo.done;
     });
   };
-};
+});
