@@ -1,3 +1,8 @@
+* Working: Yes?
+* Interesting: No
+* Progress: Abandoned
+* Purpose: Experiment
+
 == My first Angular.js app
 
 there's not much:
